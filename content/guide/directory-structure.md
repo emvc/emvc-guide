@@ -5,7 +5,7 @@ layout: 'guide'
 
 ### Application : Directory Structure
 
-Locomotive favors convention over configuration.  One of these conventions is a
+emvc favors convention over configuration.  One of these conventions is a
 well defined directory structure, making it easy to locate files in an
 application.
 

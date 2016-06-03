@@ -1,19 +1,18 @@
 {
-  "name": "www.locomotivejs.org",
+  "name": "emvc-guide",
   "version": "0.0.0",
-  "description": "The official website of Locomotive.",
+  "description": "The official website of emvc.",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/www.locomotivejs.org.git"
+    "url": "git://github.com/emvc/emvc-guide.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/www.locomotivejs.org/issues"
+    "url": "http://github.com/emvc/emvc-guide/issues"
   },
   "author": {
-    "name": "Jared Hanson",
-    "email": "jaredhanson@gmail.com",
-    "url": "http://www.jaredhanson.net/"
+    "name": "Nicholas Penree",
+    "email": "nick@penree.com"
   },
   "licenses": [ {
     "type": "CC BY-SA 3.0",

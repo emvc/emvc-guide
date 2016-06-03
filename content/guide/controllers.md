@@ -12,7 +12,7 @@ views.
 
 #### Defining a Controller
 
-In Locomotive, controllers are instances of `Controller`.  Defining a new
+In emvc, controllers are instances of `Controller`.  Defining a new
 controller is as simple as creating an instance and exporting it via the module.
 
 ```javascript
@@ -24,10 +24,10 @@ module.exports = PhotosController;
 #### Actions
 
 Functions attached to the controller are known as _action_ functions.  When
-Locomotive receives a request, it will create a new instance of the controller
+emvc receives a request, it will create a new instance of the controller
 and call the appropriate action function.
 
-For example, if a request is received for `/photos/123`, Locomotive will call
+For example, if a request is received for `/photos/123`, emvc will call
 the `show()` action of `PhotosController`.
 
 ```javascript
@@ -96,7 +96,7 @@ this.render('index');
 ##### Render another Controller's Action's View
 
 If you want to render a view belonging to an action in an entirely separate
-controller, that can be accomplished as follows: 
+controller, that can be accomplished as follows:
 
 ```javascript
 this.render('albums/show');
@@ -154,7 +154,7 @@ PhotosController.show = function() {
 }
 ```
 
-In Locomotive, requests are dispatched through [Express](http://expressjs.com/)
+In emvc, requests are dispatched through [Express](http://expressjs.com/)
 and any middleware in use before arriving at the controller.  As such, the
 entirety of the [Express API](http://expressjs.com/api.html) and the core Node.js
 [HTTP API](http://nodejs.org/api/http.html) apply to these objects.

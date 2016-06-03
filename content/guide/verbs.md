@@ -5,7 +5,7 @@ layout: 'guide'
 
 ### Routing : Verbs
 
-Locomotive's router supports verb routing in the form of `this.VERB()`, where
+emvc's router supports verb routing in the form of `this.VERB()`, where
 _VERB_ is one of the HTTP methods, such as `this.post()`.
 
 ```javascript
@@ -30,6 +30,6 @@ this.get('/user/:id', user.load, function(req, res) {
 });
 ```
 
-When use in this form, Locomotive's router supports the [API](http://expressjs.com/api.html#app.VERB)
+When use in this form, emvc's router supports the [API](http://expressjs.com/api.html#app.VERB)
 exposed by [Express](http://expressjs.com/) for routing, making it easy to
 gradually refactor routes from Express to an MVC architecture when needed.

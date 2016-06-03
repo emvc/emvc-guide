@@ -5,15 +5,15 @@ layout: 'guide'
 
 ### Datastores
 
-Locomotive recognizes that the demands of modern web applications entail the
+emvc recognizes that the demands of modern web applications entail the
 use of a variety of datastores.  Choosing the correct database is an important
-decision, and Locomotive does not impose on that choice.  Locomotive is fully
+decision, and emvc does not impose on that choice.  emvc is fully
 functional, independent of the choice of database or object mapping layer used
 by an application.
 
 #### Model Awareness
 
-Locomotive includes a `urlFor()` helper that can be used to build URLs to a
+emvc includes a `urlFor()` helper that can be used to build URLs to a
 controller's action.  For example:
 
 ```javascript

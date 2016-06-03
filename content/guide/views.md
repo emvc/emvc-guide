@@ -9,14 +9,14 @@ Views are used when rendering a response to a request.  Views are processed by
 template engines which compile the view and substitute variables to produce the
 final output.
 
-Locomotive delegates all rendering to [Express](http://expressjs.com/), ensuring
+emvc delegates all rendering to [Express](http://expressjs.com/), ensuring
 seamless compatibility with [EJS](https://github.com/visionmedia/ejs),
 [Jade](http://jade-lang.com/), and the [many](https://github.com/visionmedia/express/wiki)
 [other](https://github.com/visionmedia/consolidate.js) compliant template engines.
 
 #### Settings
 
-By default, Locomotive uses [EJS](https://github.com/visionmedia/ejs) as its
+By default, emvc uses [EJS](https://github.com/visionmedia/ejs) as its
 template engine.  That is easily changed by setting the `view engine` option in
 `config/initializers/02_views.js`:
 
@@ -24,7 +24,7 @@ template engine.  That is easily changed by setting the `view engine` option in
 this.set('view engine', 'jade');
 ```
 
-When rendering, Locomotive finds templates using a `name.format.engine`
+When rendering, emvc finds templates using a `name.format.engine`
 convention, resulting in file names such as `show.html.ejs`.
 
 Some template engines, such as Jade, internally locate layouts using just the

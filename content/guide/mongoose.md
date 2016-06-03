@@ -12,7 +12,7 @@ database written in C++.
 #### Adapter
 
 [locomotive-mongoose](https://github.com/jaredhanson/locomotive-mongoose) is a datastore
-adapter that adds Mongoose model awareness to Locomotive.
+adapter that adds Mongoose model awareness to emvc.
 
 To use the Mongoose adapter, install it via [npm](https://npmjs.org/) and save it in `package.json`:
 
@@ -41,7 +41,7 @@ Animal.findById(this.param('id'), function(err, animal) {
 #### Initializer
 
 The following initializer, located at `config/initializers/nn_mongoose.js` will
-configure Mongoose and connect to MongoDB when starting a Locomotive application:
+configure Mongoose and connect to MongoDB when starting a emvc application:
 
 ```javascript
 module.exports = function() {

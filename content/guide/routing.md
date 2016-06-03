@@ -5,7 +5,7 @@ layout: 'guide'
 
 ### Routing
 
-Locomotive's router is responsible for receiving requests to your application
+emvc's router is responsible for receiving requests to your application
 and dispatching them to a controller's action.  Dispatching is based on the
 request's URL and HTTP method.
 
@@ -17,7 +17,7 @@ Routes are configured in `config/routes.js`
 
 #### Match Routes
 
-Locomotive can match arbitrary URL patterns to a controller's action.
+emvc can match arbitrary URL patterns to a controller's action.
 
 For example, declaring this match route:
 

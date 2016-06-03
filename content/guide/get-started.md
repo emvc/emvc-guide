@@ -5,15 +5,15 @@ layout: 'guide'
 
 ### Get Started
 
-The quickest way to get started with Locomotive is to create an application
-skeleton using `lcm`, the CLI included with Locomotive.  Install Locomotive
+The quickest way to get started with emvc is to create an application
+skeleton using `lcm`, the CLI included with emvc.  Install emvc
 globally from [npm](http://npmjs.org/) to make the command available on your
 system.
 
-#### Install Locomotive
+#### Install emvc
 
 ```bash
-$ npm install locomotive -g
+$ npm install emvc -g
 ```
 
 #### Create an Application
@@ -45,5 +45,5 @@ Our new app is now up and running at [localhost:3000](http://localhost:3000)!
 
 The application skeleton is simplistic, but the code it contains has helpful
 comments and useful tips.  It is worth taking a moment to browse through the
-code to get a sense of how a Locomotive application is structured.  Then
+code to get a sense of how a emvc application is structured.  Then
 continue reading this guide for details on how the pieces fit together.

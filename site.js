@@ -1,8 +1,8 @@
 var kerouac = require('kerouac');
 var site = kerouac();
 
-site.set('base url', 'http://locomotivejs.org/');
-site.set('output', 'locomotivejs.org');
+site.set('base url', 'https://emvc.github.io/emvc/');
+site.set('output', 'emvc-guide');
 
 site.engine('ejs', require('ejs-locals'));
 
@@ -26,7 +26,7 @@ site.plug(require('kerouac-robotstxt')());
     '/guide/routing.html': '/guide/routing/',
     '/guide/views.html': '/guide/views/'
   }
-  
+
   site.plug(require('kerouac-htaccess')({ redirect: redirect }));
 })();
 

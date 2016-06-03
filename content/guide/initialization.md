@@ -5,27 +5,27 @@ layout: 'guide'
 
 ### Application : Initialization
 
-When a Locomotive application is started, it proceeds through a sequence of
+When a emvc application is started, it proceeds through a sequence of
 steps:
 
   1. Configure the Environment
-  
+
      In this step, `config/environments/all.js` is executed followed by the
      configuration file for the current environment.  For instance, when running
      in development, `config/environments/development.js` is executed.
-     
+
   2. Invoke Initializers
-  
+
      After the environment has been configured, initializers are invoked.
      Initializers are used to configure sub-systems and connect to databases,
      message queues, and other services utilized by the application.
-  
+
   3. Draw Routes
-  
+
      The routes in `config/routes.js` are drawn.
-     
+
   4. Start HTTP Server
-  
+
      Finally, the HTTP server is started and the application begins handling
      requests.
 
@@ -37,8 +37,8 @@ application is started:
 ```javascript
 module.exports = function() {
   this.set('view engine', 'ejs');
-    
-  this.use(poweredBy('Locomotive'));
+
+  this.use(poweredBy('emvc'));
   this.use(express.logger());
   this.use(express.static(__dirname + '/../../public'));
   this.use(express.cookieParser());
@@ -122,7 +122,7 @@ module.exports = function() {
       done(err, user);
     });
   });
-  
+
   passport.use(new LocalStrategy(
     function(username, password, done) {
       User.findOne({ username: username }, function(err, user) {

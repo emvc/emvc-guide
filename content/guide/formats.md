@@ -5,7 +5,7 @@ layout: 'guide'
 
 ### Controllers : Formats
 
-Part of Locomotive's support for REST principles is the ability to represent a
+Part of emvc's support for REST principles is the ability to represent a
 single resource with multiple data formats.  In technical terms this is known
 as content negotiation, as it gives a client the ability to specify what
 format it prefers to receive in response to a request.
@@ -56,7 +56,7 @@ this.respond({
 
 ##### Default Format
 
-By default, if a client requests a format that is not supported, Locomotive will
+By default, if a client requests a format that is not supported, emvc will
 respond with a `406 Not Acceptable` error.  If instead it is desired to respond
 using a default format, set a `default` format key.
 
