@@ -6,23 +6,23 @@ layout: 'guide'
 ### Get Started
 
 The quickest way to get started with emvc is to create an application
-skeleton using `lcm`, the CLI included with emvc.  Install emvc
+skeleton using `emvc`, the CLI provided by `emvc-generator`.  Install emvc-generator
 globally from [npm](http://npmjs.org/) to make the command available on your
 system.
 
-#### Install emvc
+#### Install emvc-generator
 
 ```bash
-$ npm install emvc -g
+$ npm install emvc-generator -g
 ```
 
 #### Create an Application
 
-Now we can create an application, using `lcm create <name>`.  In this quick
+Now we can create an application, using `emvc <path>`.  In this quick
 tutorial, we'll create an app named _hello_.
 
 ```bash
-$ lcm create hello
+$ emvc hello
 ```
 
 Now we'll switch into the newly created directory containing our app and
