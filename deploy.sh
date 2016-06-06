@@ -11,4 +11,5 @@ fi
 make site && \
   cd $deploy_dir && git clone git@github.com:emvc/emvc.git -b gh-pages && \
   cd emvc && cp -R $dir/emvc-guide/* ./ && \
-  git add . && git commit -avm "$msg" && git push origin gh-pages
+  git add . && git commit -avm "$msg" && git push origin gh-pages && \
+  cd $dir && rm -rf $deploy_dir
