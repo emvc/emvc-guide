@@ -1,6 +1,6 @@
-# www.locomotivejs.org
+# emvc guide
 
-The [locomotivejs.org](http://locomotivejs.org/) website.
+The [emvc](http://emvc.github.io/emvc) website.
 
 ## Usage
 
@@ -10,21 +10,22 @@ This is a static website generated using [Kerouac](https://github.com/jaredhanso
 
     $ npm install
     $ make site
-    
+
 #### Preview
 
 Once generated, the site can be previewed locally by running the server:
 
     $ node server.js
-    
+
 and navigating to: [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
 
 #### Publish
 
-    $ make publish
+    $ ./deploy <commit msg>
 
 ## Credits
 
+- [Nicholas Penree](http://github.com/drudge)
 - [Jared Hanson](http://github.com/jaredhanson)
 
 ## License
