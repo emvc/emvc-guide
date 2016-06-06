@@ -36,4 +36,4 @@ setting the bar by which other frameworks are measured.  emvc embraces the
 concepts introduced by Rails, while tailoring them to the idioms of Node.
 
 The end result is a framework that is both familiar, yet able to meet the
-demands of the modern web.  Let's [get started](guide/get-started)!
+demands of the modern web.  Let's [get started](/emvc/guide/get-started)!
