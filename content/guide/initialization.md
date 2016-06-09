@@ -39,13 +39,13 @@ module.exports = function() {
   this.set('view engine', 'ejs');
 
   this.use(poweredBy('emvc'));
-  this.use(express.logger());
-  this.use(express.static(__dirname + '/../../public'));
-  this.use(express.cookieParser());
-  this.use(express.bodyParser());
-  this.use(express.session({ secret: 'keyboard cat' }));
+  this.use(morgan('combined'));
+  this.use(cookieParser());
+  this.use(bodyParser());
+  this.use(session({ secret: 'keyboard cat' }));
   this.use(passport.initialize());
   this.use(passport.session());
+  his.use(express.static(__dirname + '/../../public'));
   this.use(this.router);
 }
 ```
